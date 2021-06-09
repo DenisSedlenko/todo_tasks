@@ -1,0 +1,32 @@
+.todo-list {
+    background: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.todo-item div {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item__checker {
+    display: block;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.todo-item__checker, .todo-item__checker > .svg-inline--fa.fa-w-16 {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

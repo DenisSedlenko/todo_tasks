@@ -1,6 +1,6 @@
 import storage from '../storage';
 
-async function setTodos(todos) {
+async function saveTodos(todos) {
   await storage.setItem('todos', JSON.stringify(todos));
 }
 
@@ -18,6 +18,6 @@ async function getTodos() {
 }
 
 export default {
-  setTodos,
-  getTodos
-}
+  saveTodos,
+  getTodos,
+};

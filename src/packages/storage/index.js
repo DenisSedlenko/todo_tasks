@@ -1,7 +1,7 @@
 let storage;
 
 async function setItem(name, value) {
-  if (typeof storage.setItem !== "function") {
+  if (typeof storage.setItem !== 'function') {
     throw 'Storage should have setItem method';
   }
 
@@ -9,7 +9,7 @@ async function setItem(name, value) {
 }
 
 async function getItem(name) {
-  if (typeof storage.getItem !== "function") {
+  if (typeof storage.getItem !== 'function') {
     throw 'Storage should have getItem method';
   }
 
@@ -18,6 +18,6 @@ async function getItem(name) {
 
 export default { setItem, getItem };
 
-export const  setStorage = (instance) => {
+export const setStorage = instance => {
   storage = instance;
-}
+};

@@ -1,0 +1,6 @@
+# dependencies
+/node_modules
+
+package-deps.json
+package-lock.json
+.env
