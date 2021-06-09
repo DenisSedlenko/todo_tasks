@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { setStorage } from "./packages/storage";
 
 function App() {
+  setStorage(localStorage);
+
   return (
     <div className="App">
       <header className="App-header">
